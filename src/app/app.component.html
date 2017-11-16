@@ -8,5 +8,5 @@
 <form [formGroup]="editorForm" novalidate>
     <label>First Name</label>
     <input formControlName="firstName" type="text">
-    <ng2-mdf-validation-message [control]="firstName" *ngIf="!firstName.pristine"></ng2-mdf-validation-message>
+    <ng2-mdf-validation-message [control]="firstName" *ngIf="!firstName.pristine" [class]="'text-danger'"></ng2-mdf-validation-message>
 </form>
